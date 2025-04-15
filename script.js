@@ -56,8 +56,9 @@ export async function display() {
 
     btn.onclick = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/cars?id=${element.id}` , {method : 'DELETE'}); //wait for the data to arrive
-        const output = await response.json();
+        const response = await fetch(`http://localhost:8080/cars/${element.id}` , {method : 'DELETE'}); //wait for the data to arrive
+        const output = await response.text();
+        location.reload();
         return output;
       } catch(error) {
         console.log(error);
@@ -78,7 +79,13 @@ export async function display() {
     btn2.innerText = "EDIT";
 
     div.appendChild(btn);
-    div.appendChild(btn2)
+    div.appendChild(btn2);
+
+    btn2.onclick = () => { 
+      editCar() ; 
+      let btn = document.querySelector('#editBtn');
+      btn.onclick = () => carSubmit(element.id);
+    }
 
     text.appendChild(div);
 
@@ -86,24 +93,24 @@ export async function display() {
 
 }
 
-export async function edit() {
-  const textEdit = document.querySelector(".table");
-  textEdit.appendChild(div);
-  let btnEdit = document.createElement("button");
-  btnEdit.onclick = async () => {
-    try {
-      const response = await fetch(`http://localhost:8080/cars?id=${element.id}` , {method : 'PUT'});
-      const output = await response.json();
-      return output;
-    } catch(error) {
-      console.log(error);
-    }
-  }
-  btnEdit.innerText = "EDIT"
-  div.appendChild(btnEdit);
+// export async function edit() {
+//   const textEdit = document.querySelector(".table");
+//   textEdit.appendChild(div);
+//   let btnEdit = document.createElement("button");
+//   btnEdit.onclick = async () => {
+//     try {
+//       const response = await fetch(`http://localhost:8080/${element.id}` , {method : 'PUT'});
+//       const output = await response.json();
+//       return output;
+//     } catch(error) {
+//       console.log(error);
+//     }
+//   }
+//   btnEdit.innerText = "EDIT"
+//   div.appendChild(btnEdit);
 
 
-}
+// }
 
 export async function sorting() {
     data.sort((a , b) => b.topSpeed - a.topSpeed);
@@ -127,7 +134,7 @@ export async function sorting() {
 export const getValue = id => document.querySelector(id).value;
 export async function displayName() {
   const [title, manufacturer, typ, price, speed] = ['#cName' , '#cManufacturer' , '#cType' , '#cSpeed' , '#cPrice'].map(getValue);
-  const data = { title, manufacturer, typ, price, speed };
+  const data = { title, manufacturer, typ, speed, price };
   sendData(data);
   
 }
@@ -144,23 +151,35 @@ export function sendData(data) {
 // ----------------------------------------------------------------------------------EDIT
 
 
-export async function editCar() {
-  let form = document.querySelector('editForm');
-  form.style.display = 'block';
+export function editCar() {
+  document.querySelector('.editForm').style.display = 'block';
 }
 
-export function changeData(data) {
-  fetch("http://localhost:8080/cars", {
-    method : "PUT",
+
+export function carSubmit(id){
+  let title = document.querySelector('#eName').value;
+  let manufacturer = document.querySelector('#eManufacturer').value;
+  let typ = document.querySelector('#eType').value;
+  let price = document.querySelector('#eSpeed').value;
+  let speed = document.querySelector('#ePrice').value;
+
+
+  const data = {title ,manufacturer ,typ ,price ,speed};
+  
+  editData(data, id);
+  location.reload();
+}
+
+export function editData(data, id) {
+
+  fetch(`http://localhost:8080/cars/${id}`, { //requête 
+    method : "PUT", //liens vers app.js (endpoint)
     headers : {
       "content-type" : "application/json",
     },
     body: JSON.stringify(data),
   })
 }
-
-
-
 
 
 
@@ -180,4 +199,5 @@ window.addTitle = addTitle;
 window.display = display;
 window.sorting = sorting;
 window.displayName = displayName;
+window.carSubmit = carSubmit;
 display();
