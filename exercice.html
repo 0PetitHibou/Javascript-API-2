@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="block">
+        <div>
+            <button onclick="colorChange()">Changer de couleur</button>
+            <h1>COULEUR</h1>
+        </div>
+        
+        <button onclick="addTitle()">Ajouter un titre</button>
+
+        <div class="container"></div>
+
+        
+        <div class="containerJson" onload="displayArray()"></div>
+
+        <button onclick="sorting()">plus rapide</button>
+        <div class="fast"></div>
+        
+    </div>
+
+    <div class="table"></div>
+    <br>
+
+    <form class="carForm">
+        <ul>
+        <div>
+            <label for="name">Nom&nbsp;:</label>
+            <input id="cName" />
+        </div>
+        <div>
+            <label for="manufacturer">Constructeur&nbsp;:</label>
+            <input type="text" id="cManufacturer" name="user_mail"/>
+        </div>
+        <div>
+            <label for="type">Type&nbsp;:</label>
+            <input type="text" id="cType" name="carType" />
+        </div>
+        <div>
+            <label for="tSpeed">Top Speed&nbsp;:</label>
+            <input type="number" id="cSpeed" name="carSpeed" />
+        </div>
+        <div>
+            <label for="price">Price&nbsp;:</label>
+            <input type="number" id="cPrice" name="carPrice" />
+        </div>
+
+            <input type="button" value="Entrer" onclick="displayName()" />
+          
+        </ul>
+    </form>
+
+    <form class="editForm">
+        <div>
+            <label for="name">Nom&nbsp;:</label>
+            <input id="cName" />
+        </div>
+        <div>
+            <label for="manufacturer">Constructeur&nbsp;:</label>
+            <input type="text" id="cManufacturer" name="user_mail"/>
+        </div>
+        <div>
+            <label for="type">Type&nbsp;:</label>
+            <input type="text" id="cType" name="carType" />
+        </div>
+        <div>
+            <label for="tSpeed">Top Speed&nbsp;:</label>
+            <input type="number" id="cSpeed" name="carSpeed" />
+        </div>
+        <div>
+            <label for="price">Price&nbsp;:</label>
+            <input type="number" id="cPrice" name="carPrice" />
+        </div>
+
+            <input type="button" value="Edit" onclick="editCar()" />
+          
+        </ul>
+    </form>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

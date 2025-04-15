@@ -1,0 +1,46 @@
+@mixin font {
+    @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin hidden {
+    display:none;
+}
+
+@mixin base {
+    padding: 30px;
+    border: 100px;
+    display:flex;
+    flex-direction:column;
+    background: #7b9cad;
+    background: linear-gradient(90deg, rgba(123, 156, 173, 0.5) 0%, rgba(87, 199, 133, 0.5) 50%, rgba(168, 168, 128, 0.5) 97%);
+}
+
+@mixin table {
+    text-align: center;
+    background: #7b9cad;
+    background: linear-gradient(90deg, rgba(123, 156, 173, 0.8) 0%, rgba(87, 199, 133, 0.8) 50%, rgba(168, 168, 128, 0.8) 97%);
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    border-radius: 20px;
+    margin-top: 20px;
+    border: solid 1px grey;
+    padding: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px ;
+}
+
+@mixin flex($flex: flex, $dir: column, $content: flex-start) {
+    display: $flex;
+    flex-direction: $dir;
+    justify-content: $content;
+}
+
+body{@include base ; @include font}
+.table{@include grid ; @include table}
+.carForm, .carForm input, .carForm label{@include flex}
+.editForm{@include hidden}

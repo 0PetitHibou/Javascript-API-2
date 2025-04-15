@@ -1,0 +1,235 @@
+
+[
+  {
+    "name": "Adder",
+    "manufacturer": "Truffade",
+    "type": "Supercar",
+    "topSpeed": 250,
+    "price": 1000000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/6/6d/Adder-GTAV-Front.png"
+  },
+  {
+    "name": "Zentorno",
+    "manufacturer": "Pegassi",
+    "type": "Supercar",
+    "topSpeed": 245,
+    "price": 725000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/b/b3/Zentorno-GTAV-Front.png"
+  },
+  {
+    "name": "Entity XF",
+    "manufacturer": "Overflod",
+    "type": "Supercar",
+    "topSpeed": 240,
+    "price": 795000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/d/d5/EntityXF-GTAV-Front.png"
+  },
+  {
+    "name": "T20",
+    "manufacturer": "Progen",
+    "type": "Supercar",
+    "topSpeed": 242,
+    "price": 2200000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/7/71/T20-GTAV-Front.png"
+  },
+  {
+    "name": "Osiris",
+    "manufacturer": "Pegassi",
+    "type": "Supercar",
+    "topSpeed": 235,
+    "price": 1950000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/4/48/Osiris-GTAV-Front.png"
+  },
+  {
+    "name": "Itali GTB",
+    "manufacturer": "Progen",
+    "type": "Supercar",
+    "topSpeed": 238,
+    "price": 1189000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/d/d1/ItaliGTB-GTAV-Front.png"
+  },
+  {
+    "name": "Reaper",
+    "manufacturer": "Pegassi",
+    "type": "Supercar",
+    "topSpeed": 240,
+    "price": 1595000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/8/87/Reaper-GTAV-Front.png"
+  },
+  {
+    "name": "Vacca",
+    "manufacturer": "Pegassi",
+    "type": "Supercar",
+    "topSpeed": 230,
+    "price": 240000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/3/37/Vacca-GTAV-Front.png"
+  },
+  {
+    "name": "Infernus",
+    "manufacturer": "Pegassi",
+    "type": "Supercar",
+    "topSpeed": 240,
+    "price": 440000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/e/e1/Infernus-GTAV-Front.png"
+  },
+  {
+    "name": "Bullet",
+    "manufacturer": "Vapid",
+    "type": "Supercar",
+    "topSpeed": 230,
+    "price": 155000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/c/cc/Bullet-GTAV-Front.png"
+  },
+  {
+    "name": "Cheetah",
+    "manufacturer": "Grotti",
+    "type": "Supercar",
+    "topSpeed": 235,
+    "price": 650000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/3/33/Cheetah-GTAV-Front.png"
+  },
+  {
+    "name": "Turismo R",
+    "manufacturer": "Grotti",
+    "type": "Supercar",
+    "topSpeed": 245,
+    "price": 500000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/d/d7/TurismoR-GTAV-Front.png"
+  },
+  {
+    "name": "Cyclone",
+    "manufacturer": "Coil",
+    "type": "Supercar",
+    "topSpeed": 211,
+    "price": 1890000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/5/50/Cyclone-GTAV-Front.png"
+  },
+  {
+    "name": "XA-21",
+    "manufacturer": "Ocelot",
+    "type": "Supercar",
+    "topSpeed": 240,
+    "price": 2375000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/2/28/XA-21-GTAV-Front.png"
+  },
+  {
+    "name": "FMJ",
+    "manufacturer": "Vapid",
+    "type": "Supercar",
+    "topSpeed": 245,
+    "price": 1750000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/d/d7/FMJ-GTAV-Front.png"
+  },
+  {
+    "name": "Tezeract",
+    "manufacturer": "Pegassi",
+    "type": "Supercar",
+    "topSpeed": 232,
+    "price": 2825000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/0/05/Tezeract-GTAV-Front.png"
+  },
+  {
+    "name": "Deveste Eight",
+    "manufacturer": "Principe",
+    "type": "Supercar",
+    "topSpeed": 247,
+    "price": 1795000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/1/1a/DevesteEight-GTAV-Front.png"
+  },
+  {
+    "name": "Emerus",
+    "manufacturer": "Progen",
+    "type": "Supercar",
+    "topSpeed": 250,
+    "price": 2750000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/a/a3/Emerus-GTAV-Front.png"
+  },
+  {
+    "name": "Krieger",
+    "manufacturer": "Benefactor",
+    "type": "Supercar",
+    "topSpeed": 246,
+    "price": 2875000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/e/e9/Krieger-GTAV-Front.png"
+  },
+  {
+    "name": "Nero",
+    "manufacturer": "Benny's",
+    "type": "Supercar",
+    "topSpeed": 240,
+    "price": 1440000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/2/25/Nero-GTAV-Front.png"
+  },
+  {
+    "name": "Pariah",
+    "manufacturer": "Ocelot",
+    "type": "Sports",
+    "topSpeed": 255,
+    "price": 1420000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/f/f1/Pariah-GTAV-Front.png"
+  },
+  {
+    "name": "Elegy RH8",
+    "manufacturer": "Annis",
+    "type": "Sports",
+    "topSpeed": 220,
+    "price": 0,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/9/90/ElegyRH8-GTAV-Front.png"
+  },
+  {
+    "name": "Comet SR",
+    "manufacturer": "Pfister",
+    "type": "Sports",
+    "topSpeed": 235,
+    "price": 1138000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/7/7d/CometSR-GTAV-Front.png"
+  },
+  {
+    "name": "Neon",
+    "manufacturer": "Pfister",
+    "type": "Sports",
+    "topSpeed": 220,
+    "price": 1500000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/d/d0/Neon-GTAV-Front.png"
+  },
+  {
+    "name": "Specter",
+    "manufacturer": "Dewbauchee",
+    "type": "Sports",
+    "topSpeed": 230,
+    "price": 599000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/5/52/Specter-GTAV-Front.png"
+  },
+  {
+    "name": "Feltzer",
+    "manufacturer": "Benefactor",
+    "type": "Sports",
+    "topSpeed": 230,
+    "price": 145000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/c/c3/Feltzer-GTAV-Front.png"
+  },
+  {
+    "name": "Rapid GT",
+    "manufacturer": "Dewbauchee",
+    "type": "Sports",
+    "topSpeed": 225,
+    "price": 132000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/0/03/RapidGT-GTAV-Front.png"
+  },
+  {
+    "name": "9F",
+    "manufacturer": "Obey",
+    "type": "Sports",
+    "topSpeed": 225,
+    "price": 120000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/5/56/9F-GTAV-Front.png"
+  },
+  {
+    "name": "Banshee",
+    "manufacturer": "Bravado",
+    "type": "Sports",
+    "topSpeed": 235,
+    "price": 105000,
+    "image": "https://static.wikia.nocookie.net/gtawiki/images/f/f6/Banshee-GTAV-Front.png"
+  }
+]
