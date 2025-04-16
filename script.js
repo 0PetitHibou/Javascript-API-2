@@ -35,9 +35,12 @@ newArray.push(data);
 
 //-------------------------------------------------------------
 
+
+
 export async function display() {
   
   const text = document.querySelector(".table");
+
   newArray[0].forEach(element => {
     let div = document.createElement("div");
     
@@ -175,9 +178,9 @@ export function editData(data, id) {
 // ----------------------------------------------------------------------------------SEARCH
 
 
-export async function search() {
+export function search() {
   let search = document.querySelector("#search").value;   
-     const text = document.querySelector(".table");
+  const text = document.querySelector(".table");
 
   text.innerHTML = " ";
 
@@ -198,7 +201,18 @@ export async function search() {
         </div>`;
 
     }
+
   })
+  
+}
+
+export function searchInProgree() {
+  let searchBar = document.querySelector("#search");
+  let query = searchBar.value.trim();
+
+  
+
+
 }
 
 

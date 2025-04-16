@@ -8,4 +8,3 @@ export const myData = async () => {
         console.log(error);
     }
 }
-
