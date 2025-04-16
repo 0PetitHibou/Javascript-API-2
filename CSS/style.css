@@ -72,4 +72,32 @@ button:active {
   width: 320px;
 }
 
+.search, .searchBtn {
+  padding: 0.8em;
+  border-radius: 10px;
+}
+.search:focus-within{
+  border-color: #4a90e2;
+  box-shadow:
+    0 0 0 4px rgba(74, 144, 226, 0.15),
+    0 0 20px rgba(74, 144, 226, 0.4),
+    inset 0 0 8px rgba(74, 144, 226, 0.2);
+  transform: scale(1.025);
+  background: linear-gradient(135deg, #e9f0ff, #ffffff);
+}
+
+.searchBtn:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%), 0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #3b9647;
+  transform: translateY(-0.1em);
+}
+
+.searchBtn:active {
+  background-color: #3b9647;
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+.searchBlock {
+  margin: 0.5em;
+}
+
 /*# sourceMappingURL=style.css.map */

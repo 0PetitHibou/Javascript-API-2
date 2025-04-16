@@ -7,18 +7,18 @@ newArray.push(data);
 
 
 
-function colorChange() {
-    const toggleColor = document.querySelector("h1");
-    return toggleColor.style.color = "red";
-}
+// function colorChange() {
+//     const toggleColor = document.querySelector("h1");
+//     return toggleColor.style.color = "red";
+// }
 
-function addTitle(){
+// function addTitle(){
     
-    const title = document.querySelector(".container");
-    const h1 = document.createElement("h1");
-    title.appendChild(h1);
-    h1.textContent = "Coucou";
-}
+//     const title = document.querySelector(".container");
+//     const h1 = document.createElement("h1");
+//     title.appendChild(h1);
+//     h1.textContent = "Coucou";
+// }
 
 //-------------------------------------------------------------
 // tableau par json
@@ -64,16 +64,6 @@ export async function display() {
         console.log(error);
       }
     }
-
-    // btn2.onclick = async () => {
-    //   try {
-    //     const response2 = await fetch(`http://localhost:8080/cars?id=${element.id}` , {method : 'PUT'});
-    //     const output2 = await response2.json();
-    //     return output2;
-    //   } catch(error) {
-    //     console.log(error);
-    //   }
-    // }
 
     btn.innerText = "DELETE";
     btn2.innerText = "EDIT";
@@ -167,7 +157,7 @@ export function carSubmit(id){
   const data = {title ,manufacturer ,typ ,price ,speed};
   
   editData(data, id);
-  location.reload();
+  // location.reload();
 }
 
 export function editData(data, id) {
@@ -182,22 +172,43 @@ export function editData(data, id) {
 }
 
 
+// ----------------------------------------------------------------------------------SEARCH
+
+
+export async function search() {
+  let search = document.querySelector("#search").value;   
+     const text = document.querySelector(".table");
+
+  text.innerHTML = " ";
+
+  data.forEach(element => {
+    let carTitle = element.title ;
+    search = search.replace(/\s+/g, '').toLowerCase();
+    carTitle = carTitle.replace(/\s+/g, '').toLowerCase();
+
+    if(search === carTitle) {
+      
+      text.innerHTML +=
+        `<div>
+          <p>${element.title}</p>
+          <p>${element.manufacturer}</p>
+          <p>${element.typ}</p>
+          <p>${element.speed} mph</p>
+          <p>${element.price} $</p>
+        </div>`;
+
+    }
+  })
+}
 
 
 
-
-
-
-
-
-
-
-
-
-window.colorChange = colorChange;
-window.addTitle = addTitle;
+// window.colorChange = colorChange;
+// window.addTitle = addTitle;
 window.display = display;
 window.sorting = sorting;
 window.displayName = displayName;
 window.carSubmit = carSubmit;
+window.search = search;
+
 display();
